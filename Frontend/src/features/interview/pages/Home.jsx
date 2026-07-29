@@ -24,7 +24,7 @@ const Home = () => {
         try {
             // URL ko apne backend base URL ke hisab se change karein (e.g., http://localhost:3000/api/auth/logout)
             // withCredentials: true zaroori hai cookie clear karne ke liye
-            await axios.get('https://careerpilot-ai-ju4j.onrender.com/api/auth/logout', {
+            await axios.get('https://interview-pro-ai-backend-33ag.onrender.com', {
                 withCredentials: true 
             });
 
