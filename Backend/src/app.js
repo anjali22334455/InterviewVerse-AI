@@ -9,7 +9,7 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://interview-pro-ai-backend-33ag.onrender.com"
+        "https://interview-verse-jsw4bdpox-anjali-1929.vercel.app/login"
     ],
     credentials: true
 }))
