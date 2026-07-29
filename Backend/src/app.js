@@ -9,7 +9,7 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://career-pilot-ai-eta-taupe.vercel.app"
+        "https://interview-pro-ai-backend-33ag.onrender.com"
     ],
     credentials: true
 }))
