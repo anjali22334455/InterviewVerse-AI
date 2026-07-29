@@ -1,0 +1,30 @@
+.button {
+    border: none;
+    outline: none;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transform-origin: center;
+    font-family: system-ui, -apple-system, sans-serif;
+
+    // Transition handling for uniform glow properties
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+
+    &.primary-button {
+        background-color: #00d8d4; // Deep Aqua Base
+        color: white;           // Dark text for super crisp readability
+        font-weight: 700;
+
+        &:hover {
+            background-color: #00f5d4; // Bright neon pop aqua
+            box-shadow: 0 0 15px rgba(#00f5d4, 0.45); // Cyber glow
+            transform: scale(1.03); 
+        }
+    }
+
+    &:active {
+        transform: scale(0.95) !important; // Rapid compression feedback
+        transition: transform 0.04s ease !important; // Snappy micro-interaction
+    }
+}

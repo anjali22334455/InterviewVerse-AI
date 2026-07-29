@@ -1,0 +1,116 @@
+@use "sass:color";
+
+$accent-aqua: #00f5d4; 
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background-color: #0d1117; 
+    font-family: system-ui, -apple-system, sans-serif;
+
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: #161b22; 
+        border: 1px solid #2a3348;
+        border-radius: 1rem;
+        padding: 2.25rem;
+        box-sizing: border-box;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #e6edf3;
+            margin: 0;
+            text-align: center;
+            letter-spacing: -0.025em;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.875rem;
+            color: #7d8590;
+            text-align: center;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #e6edf3;
+            padding-left: 0.25rem;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #2a3348;
+            outline: none;
+            padding-inline: 1rem;
+            padding-block: 0.75rem;
+            border-radius: 0.6rem;
+            background-color: #1e2535;
+            color: #e6edf3;
+            font-size: 0.95rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+            &::placeholder {
+                color: #545d68;
+            }
+
+            &:focus {
+                border-color: $accent-aqua;
+                box-shadow: 0 0 0 3px rgba($accent-aqua, 0.15);
+            }
+        }
+    }
+
+    // Sirf layout positioning di hai taaki core properties 'button.scss' se aayein
+    .primary-button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    a {
+        color: $accent-aqua;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.15s ease;
+
+        &:hover {
+            color: color.adjust($accent-aqua, $lightness: 10%);
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 1rem;
+        
+        .form-container {
+            padding: 1.75rem 1.25rem;
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
