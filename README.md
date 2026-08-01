@@ -1,4 +1,4 @@
-# 🚀 CareerPilot AI
+# 🚀 InterviewVerse-AI
 
 An AI-powered Interview Preparation Platform built with the MERN Stack and Google Gemini AI.
 
