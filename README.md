@@ -142,14 +142,13 @@ npm run dev
 
 ## Author
 
-**Sharad Jaiswal**
+**Anjali Jaiswal**
 
 GitHub:
-https://github.com/DeveloperSharad2004
+https://github.com/anjali22334455
 
 LinkedIn:
-(Add your LinkedIn URL)
-
+(https://www.linkedin.com/in/anjali-jaiswal-438a1328b/)
 ---
 
 ## ⭐ Support
